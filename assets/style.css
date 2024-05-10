@@ -1,19 +1,21 @@
-/* Stylesheet by ChatGPT */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* light gray background */
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    width: 100%; /* default full-width */
-    box-sizing: border-box; /* ensure padding doesn't affect width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Media query for widescreen browser */
+/* Media query to adapt for wide screens */
 @media (min-width: 960px) {
     body {
-        width: 80%; /* make body 50% on desktop screens */
+        width: 80%;
         max-width: 960px;
-        margin: 0 auto; /* center the body in the middle */
+        margin: 0 auto;
     }
 }
 
@@ -24,81 +26,96 @@ body {
     height: 100vh;
 }
 
-/* Style the top section with defined height */
 .top {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* vertically center the content */
-    background-color: #333; /* dark background */
-    padding: 0 25px; /* consistent horizontal padding */
-    height: 80px; /* set a consistent height */
-    border-bottom: 2px orange solid;
+    align-items: baseline;
+    background-color: #333;
+    padding: 0 25px;
+    height: 80px;
+    border-bottom: 3px #f9f9f9 solid;
 }
 
-/* Style the h1 section */
-#h1 {
-    font-size: 1.5em; /* emphasize the text */
-    color: #fff; /* white text */
-    margin: 0; /* ensure no extra margin */
-}
-
-/* Style the links section */
-#links {
+.left_items {
     display: flex;
-    gap: 0px; /* space between links */    
-    height: 100%; /* cover full height of the parent */
-    align-items: center; /* center vertically */
-    padding: 0; /* remove padding */
+    gap: 40px;
+    align-items: baseline;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
-/* Ensure links cover full height and center text */
-#links a {
-    text-decoration: none; /* no underline */
-    color: #fff; /* white text */
-    padding: 0 20px; /* consistent horizontal padding */
-    display: flex; /* use flex to maintain height */
-    align-items: center; /* center vertically */
-    justify-content: center; /* center horizontally */
-    height: 100%; /* ensure full height */
-    box-sizing: border-box; /* ensure padding doesn't create overflow */
-    border-left: 1px #333 solid;
-    border-right: 1px #333 solid;
-    transition: background-color 0.3s ease; /* smooth transition */
+.left_items #h1 {
+    color: #fff;
 }
 
-/* Change background color on hover */
-#links a:hover {
-    background-color: #555; /* background change on hover */
-    color: #fff; /* maintain white text */
-    border-left: 1px orange dotted;
-    border-right: 1px orange dotted;
+.left_items #h1 a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fff;
 }
 
-/* Style the mid section */
+.left_items #h2 {
+    font-weight: 300;
+    color: #aaa;
+}
+
+.top #links {
+    display: flex;  
+    height: 100%;
+    align-items: center;
+}
+
+.top #links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.4s ease;
+}
+
+.top #links a:hover {
+    background-color: #222;
+    color: rgb(255, 100, 62);
+}
+
 .mid {
     flex-grow: 1;
     padding: 20px;
-    background-color: #fff; /* white background */
-    color: #333; /* dark text */
-    border-top: 2px red solid;
-    border-bottom: 2px red solid;
+    background-color: #fff;
+    color: #333;
+    border-top: 4px rgb(255, 100, 62) solid;
+    border-bottom: 4px rgb(255, 100, 62) solid;
 }
 
-/* Style the main text block */
-#text_block {
-    font-size: 1em; /* default font size */
-    line-height: 1.6; /* line spacing for readability */
-    margin: 0 0 20px 0; /* margin-bottom for spacing */
+.text_block {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin: 0 0 20px 0;
 }
 
-/* Style the bottom section with defined height */
+.text_block h2 {
+    font-size: 1.5em;
+    line-height: 1.8em;
+    border-bottom: 1px #000 solid;
+    margin: 0;
+}
+
+.text_block .content {
+    padding: 0 10px 0 20px;
+}
+
 .bottom {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* vertically center the content */
-    background-color: #333; /* dark background */
-    padding: 0 25px; /* consistent horizontal padding */
-    height: 40px; /* set a consistent height */
-    border-top: 2px orange solid;
-    color: #fff;
+    align-items: center;
+    background-color: #333;
+    padding: 0 25px;
+    height: 40px;
+    border-top: 3px #f9f9f9 solid;
+    color: #666;
 }
