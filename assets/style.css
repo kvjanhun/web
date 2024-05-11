@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 body {
     font-family: "DM Sans", sans-serif;
@@ -31,8 +31,8 @@ body {
     justify-content: space-between;
     align-items: baseline;
     background-color: #333;
-    padding: 0 25px;
-    height: 80px;
+    padding: 0 1.5rem;
+    height: 5.5rem;
     border-bottom: 3px #f9f9f9 solid;
 }
 
@@ -60,6 +60,12 @@ body {
     color: #aaa;
 }
 
+@media (max-width: 600px) {
+    .left_items #h2 {
+        display: none;
+    }
+}
+
 .top #links {
     display: flex;  
     height: 100%;
@@ -85,7 +91,7 @@ body {
 
 .mid {
     flex-grow: 1;
-    padding: 20px;
+    padding: 1.5rem;
     background-color: #fff;
     color: #333;
     border-top: 4px rgb(255, 100, 62) solid;
@@ -95,7 +101,7 @@ body {
 .text_block {
     font-size: 1em;
     line-height: 1.6em;
-    margin: 0 0 20px 0;
+    margin: 0 0 1.5rem 0;
 }
 
 .text_block h2 {
@@ -106,7 +112,7 @@ body {
 }
 
 .text_block .content {
-    padding: 0 10px 0 20px;
+    padding: 0 1rem 0 1.5rem;
 }
 
 .bottom {
@@ -114,8 +120,8 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 0 25px;
-    height: 40px;
+    padding: 0 1.5rem;
+    height: 2em;
     border-top: 3px #f9f9f9 solid;
     color: #666;
 }
